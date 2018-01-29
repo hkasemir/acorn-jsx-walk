@@ -5,7 +5,7 @@
   "author": "Heidi Kasemir",
   "license": "MIT",
   "keywords": [
-    "acorn",
+    "flow",
     "jsx",
     "walk",
     "parse"
@@ -36,7 +36,7 @@
   "scripts": {
     "clean": "rimraf lib dist",
     "build": "babel index.js walk.js --out-dir lib",
-    "build:umd": "webpack index.js dist/acorn-jsx-walk.js && set NODE_ENV=production && webpack index.js dist/acorn-jsx-walk.min.js",
+    "build:umd": "webpack index.js dist/flow-jsx-walk.js && set NODE_ENV=production && webpack index.js dist/flow-jsx-walk.min.js",
     "lint": "eslint index.js",
     "test": "ava",
     "prepublish": "npm run lint && npm run test && npm run clean && npm run build && npm run build:umd"

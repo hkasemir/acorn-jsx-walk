@@ -239,7 +239,7 @@ base.Function = (node, st, c) => {
 base.ScopeBody = (node, st, c) => c(node, st, "Statement")
 base.ScopeExpression = (node, st, c) => c(node, st, "Expression")
 
-base.Pattern = (node, st, c) => {
+base.Pattern = (node={}, st, c) => {
   if (node.type == "Identifier")
     c(node, st, "VariablePattern")
   else if (node.type == "MemberExpression")
